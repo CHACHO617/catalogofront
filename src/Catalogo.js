@@ -11,9 +11,7 @@ const Catalogo = () => {
   useEffect(() => {
     const fetchCatalogo = async () => {
       try {
-        const { data } = await axios.get(
-          "https://catalogohmb.onrender.com/api/catalogo"
-        ); /*("http://localhost:8000/api/catalogo");*/
+        const { data } = await axios.get("http://localhost:8000/api/catalogo");
         const catalogoWithIngredients = await Promise.all(
           data.catalogo.map(async (producto) => {
             const ingredientes = await fetchIngredientNames(
@@ -36,10 +34,8 @@ const Catalogo = () => {
     return await Promise.all(
       id_ingredientes.map(async (ingrediente) => {
         const response = await fetch(
-          "https://catalogohmb.onrender.com/api/ingredientes/${ingrediente}"
-        ); /*(
           `http://localhost:8000/api/ingredientes/${ingrediente}`
-        );*/
+        );
         //
         const data = await response.json();
         return data.name;
