@@ -36,7 +36,7 @@ const Catalogo = () => {
     return await Promise.all(
       id_ingredientes.map(async (ingrediente) => {
         const response = await fetch(
-          "https://catalogohmb.onrender.com/api/ingredients/${ingrediente}"
+          "https://catalogohmb.onrender.com/api/ingredientes/${ingrediente}"
         ); /*(
           `http://localhost:8000/api/ingredientes/${ingrediente}`
         );*/
