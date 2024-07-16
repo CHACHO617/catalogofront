@@ -40,6 +40,7 @@ const Catalogo = () => {
         ); /*(
           `http://localhost:8000/api/ingredientes/${ingrediente}`
         );*/
+        //
         const data = await response.json();
         return data.name;
       })
