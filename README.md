@@ -1,5 +1,5 @@
 # React App Catálogo
-Problematica: Este proyecto de react busca mostrar el consumir el backend creado en Node js mediante un front end con React, mostrando que el proyecto como tal puede se puede consumir el backend (API) creado usando Node Js mediante un front con otro framework JavaScript como React. 
+Este proyecto de react busca mostrar el consumir el backend creado en Node js mediante un front end con React, mostrando que el proyecto como tal puede se puede consumir el backend (API) creado usando Node Js mediante un front con otro framework JavaScript como React. 
 
 ### Catalogo.js
 Este componente Catalogo es una parte de una aplicación React que muestra una lista de productos con sus detalles. Incluye una barra de búsqueda para filtrar los productos por nombre.
