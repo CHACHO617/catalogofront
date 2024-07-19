@@ -26,4 +26,4 @@ Actualización del término de búsqueda: A través de una función de devoluci�
 searchTerm: El término de búsqueda actual que se muestra en el campo de entrada.
 onChange: Función de devolución de llamada que se ejecuta cuando el usuario cambia el valor del campo de entrada.
 
-![Node.js with React]([URL_to_image](https://res.cloudinary.com/boardinfinity/image/upload/t_blog_img/bi-websites/blog/11/BLOG-SHEET-3--66-.png)
+![Node.js with React]([URL_to_image](https://res.cloudinary.com/boardinfinity/image/upload/t_blog_img/bi-websites/blog/11/BLOG-SHEET-3--66-.png))
