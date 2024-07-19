@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# React App Catálogo
+Problematica: Este proyecto de react busca mostrar el consumir el backend creado en Node js mediante un front end con React, mostrando que el proyecto como tal puede se puede consumir el backend (API) creado usando Node Js mediante un front con otro framework JavaScript como React. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Catalogo.js
+Este componente Catalogo es una parte de una aplicación React que muestra una lista de productos con sus detalles. Incluye una barra de búsqueda para filtrar los productos por nombre.
 
-## Available Scripts
+#### Funcionalidades
+Carga de datos: Al montarse el componente, se realiza una solicitud HTTP a un endpoint para obtener una lista de productos y sus respectivos ingredientes.
+Filtrado: Permite filtrar los productos mostrados en función del término de búsqueda ingresado por el usuario.
+Visualización: Muestra detalles de cada producto, incluyendo imagen, nombre, descripción, precio, stock e ingredientes.
 
-In the project directory, you can run:
+#### Componentes
+SearchBar: Un componente para la barra de búsqueda que permite al usuario ingresar texto para filtrar los productos.
 
-### `npm start`
+#### Axios
+Se utiliza para realizar solicitudes HTTP.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Searchbar.js
+El componente SearchBar es una parte de una aplicación React que proporciona una barra de búsqueda para filtrar productos u otros elementos en una lista.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Funcionalidades
+Entrada de búsqueda: Permite al usuario ingresar texto para buscar productos.
+Actualización del término de búsqueda: A través de una función de devolución de llamada, actualiza el estado del término de búsqueda en el componente padre.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Terminos
+searchTerm: El término de búsqueda actual que se muestra en el campo de entrada.
+onChange: Función de devolución de llamada que se ejecuta cuando el usuario cambia el valor del campo de entrada.
